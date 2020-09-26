@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты полицаев</title>
+    <style>
+        body {
+            position: relative;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            font-family: 'Arial';
+            font-weight: 100;
+            line-height: 1.2em;
+            font-size: 14px;
+            color: rgba(0, 0, 0, 1);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #151b2d;
+        }
+
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        a,
+        a:hover,
+        a:link,
+        a:visited,
+        a:active {
+            text-decoration: none;
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            font-weight: 100;
+            line-height: 1.2em;
+        }
+
+        .container {
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .container {
+            width: 1170px;
+        }
+
+        @media screen and (max-width: 1199.98px) {
+            .container {
+                width: 950px;
+            }
+        }
+
+        @media screen and (max-width: 991.98px) {
+            .container {
+                width: 720px;
+            }
+        }
+
+        @media screen and (max-width: 767.98px) {
+            .container {
+                width: 530px;
+            }
+        }
+
+        @media screen and (max-width: 575.98px) {
+            .container {
+                width: 440px;
+            }
+        }
+
+        @media screen and (max-width: 479.98px) {
+            .container {
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+        }
+
+        ul.table {
+            list-style-type: none;
+            margin: 20px 0;
+            padding: 0;
+            width: 100%;
+            display: table;
+        }
+
+        .row {
+            display: table-row;
+            background: rgb(220, 217, 253);
+        }
+
+        .row.header {
+            font-size: 16px;
+            font-weight: 600;
+            color: #ffffff;
+            background: #8faad0;
+        }
+
+        .cell {
+            padding: 10px 12px;
+            display: table-cell;
+            border-bottom: 1px solid #8faad0;
+        }
+
+        @media screen and (max-width: 767px) {
+
+            ul.table {
+                display: block;
+            }
+
+            .row {
+                padding: 10px 0 6px;
+                display: block;
+                border-bottom: 1px solid #8faad0;
+            }
+
+            .row.header {
+                padding: 0;
+                height: 20px;
+            }
+
+            .cell {
+                padding: 0px 20px;
+                display: block;
+                border-bottom: unset;
+                text-align: center;
+            }
+
+            .row.header .cell {
+                display: none;
+            }
+
+            .row .cell {
+                margin-bottom: 10px;
+            }
+
+            .row .cell:before {
+                margin-bottom: 4px;
+                content: attr(data-title);
+                font-size: 10px;
+                line-height: 1.2em;
+                font-weight: bold;
+                color: rgba(0, 0, 0, 0.4);
+                display: block;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Контакты полицаев</h1>
+
+        <ul class="table">
+            <!-- Заголовок -->
+            <li class="row header">
+                <div class="cell">
+                    № п/п
+                </div>
+                <div class="cell">
+                    Фамилия и имя
+                </div>
+                <div class="cell">
+                    Телефон
+                </div>
+                <div class="cell">
+                    Е-mail
+                </div>
+            </li>
+            <!-- Конец заголовка -->
+
+            <li class="row">
+                <div class="cell" data-title="№ п/п">
+                    1
+                </div>
+                <div class="cell" data-title="Фамилия и имя">
+                    <span title="Фамилия и имя">Довгаль Дмитрий</span>
+                </div>
+                <div class="cell" data-title="Телефон">
+                    <a title="Phone" href="tel:+380981180209 "> + 38 (098) 118 02 09</a>
+                </div>
+                <div class="cell" data-title="Е-mail">
+                    <a title="E-mail" href="mailto:dovgal.dima.86@gmail.com">dovgal.dima.86@gmail.com</a>
+                </div>
+            </li>
+
+            <li class="row">
+                <div class="cell" data-title="№ п/п">
+                    2
+                </div>
+                <div class="cell" data-title="Фамилия и имя">
+                    <span title="Фамилия и имя">Ницевич Алексей</span>
+                </div>
+                <div class="cell" data-title="Телефон">
+                    <a title="Phone" href="tel:+380  "> + 38 (0 )  </a>
+                </div>
+                <div class="cell" data-title="Е-mail">
+                    <a title="E-mail" href="mailto: @ "> @ </a>
+                </div>
+            </li>
+
+            <li class="row">
+                <div class="cell" data-title="№ п/п">
+                    3
+                </div>
+                <div class="cell" data-title="Фамилия и имя">
+                    <span title="Фамилия и имя">Савенкова Жанна</span>
+                </div>
+                <div class="cell" data-title="Телефон">
+                    <a title="Phone" href="tel:+380  "> + 38 (0 )  </a>
+                </div>
+                <div class="cell" data-title="Е-mail">
+                    <a title="E-mail" href="mailto: @ "> @ </a>
+                </div>
+            </li>
+
+            <li class="row">
+                <div class="cell" data-title="№ п/п">
+                    4
+                </div>
+                <div class="cell" data-title="Фамилия и имя">
+                    <span title="Фамилия и имя">Река Алена</span>
+                </div>
+                <div class="cell" data-title="Телефон">
+                    <a title="Phone" href="tel:+380  "> + 38 (0 )  </a>
+                </div>
+                <div class="cell" data-title="Е-mail">
+                    <a title="E-mail" href="mailto: @ "> @ </a>
+                </div>
+            </li>
+
+            <li class="row">
+                <div class="cell" data-title="№ п/п">
+                    5
+                </div>
+                <div class="cell" data-title="Фамилия и имя">
+                    <span title="Фамилия и имя">Никита</span>
+                </div>
+                <div class="cell" data-title="Телефон">
+                    <a title="Phone" href="tel:+380  "> + 38 (0 ) </a>
+                </div>
+                <div class="cell" data-title="Е-mail">
+                    <a title="E-mail" href="mailto: @ "> @ </a>
+                </div>
+            </li>
+
+            <li class="row">
+                <div class="cell" data-title="№ п/п">
+                    6
+                </div>
+                <div class="cell" data-title="Фамилия и имя">
+                    <span title="Фамилия и имя">Мельникова Алина</span>
+                </div>
+                <div class="cell" data-title="Телефон">
+                    <a title="Phone" href="tel:+380  "> + 38 (0 )  </a>
+                </div>
+                <div class="cell" data-title="Е-mail">
+                    <a title="E-mail" href="mailto: @ ">  @ </a>
+                </div>
+            </li>
+
+            <li class="row">
+                <div class="cell" data-title="№ п/п">
+                    7
+                </div>
+                <div class="cell" data-title="Фамилия и имя">
+                    <span title="Фамилия и имя"> Паскевская Валерия</span>
+                </div>
+                <div class="cell" data-title="Телефон">
+                    <a title="Phone" href="tel:+380  "> + 38 (0 )  </a>
+                </div>
+                <div class="cell" data-title="Е-mail">
+                    <a title="E-mail" href="mailto: @ "> @ </a>
+                </div>
+            </li>
+
+            <li class="row">
+                <div class="cell" data-title="№ п/п">
+                    8
+                </div>
+                <div class="cell" data-title="Фамилия и имя">
+                    <span title="Фамилия и имя">Мискевич Жанна</span>
+                </div>
+                <div class="cell" data-title="Телефон">
+                    <a title="Phone" href="tel:+380  "> + 38 (0 )  </a>
+                </div>
+                <div class="cell" data-title="Е-mail">
+                    <a title="E-mail" href="mailto: @ "> @ </a>
+                </div>
+            </li>
+
+            <li class="row">
+                <div class="cell" data-title="№ п/п">
+                    9
+                </div>
+                <div class="cell" data-title="Фамилия и имя">
+                    <span title="Фамилия и имя">Боярчук Миша</span>
+                </div>
+                <div class="cell" data-title="Телефон">
+                    <a title="Phone" href="tel:+380 "> + 38 (0 ) </a>
+                </div>
+                <div class="cell" data-title="Е-mail">
+                    <a title="E-mail" href="mailto: @ "> @ </a>
+                </div>
+            </li>
+
+            <li class="row">
+                <div class="cell" data-title="№ п/п">
+                    10
+                </div>
+                <div class="cell" data-title="Фамилия и имя">
+                    <span title="Фамилия и имя">Закарлюка Сергей</span>
+                </div>
+                <div class="cell" data-title="Телефон">
+                    <a title="Phone" href="tel:+38  "> + 38 (0 ) </a>
+                </div>
+                <div class="cell" data-title="Е-mail">
+                    <a title="E-mail" href="mailto: @ "> @ </a>
+                </div>
+            </li>
+
+            <li class="row">
+                <div class="cell" data-title="№ п/п">
+                    11
+                </div>
+                <div class="cell" data-title="Фамилия и имя">
+                    <span title="Фамилия и имя"> Димас Димас</span>
+                </div>
+                <div class="cell" data-title="Телефон">
+                    <a title="Phone" href="tel:+380  "> + 38 (0 )  </a>
+                </div>
+                <div class="cell" data-title="Е-mail">
+                    <a title="E-mail" href="mailto: @ "> @ </a>
+                </div>
+            </li>
+
+            <li class="row">
+                <div class="cell" data-title="№ п/п">
+                    12
+                </div>
+                <div class="cell" data-title="Фамилия и имя">
+                    <span title="Фамилия и имя"> Новотуцкий Константин</span>
+                </div>
+                <div class="cell" data-title="Телефон">
+                    <a title="Phone" href="tel:+380  "> + 38 (0 ) </a>
+                </div>
+                <div class="cell" data-title="Е-mail">
+                    <a title="E-mail" href="mailto: @ "> @ </a>
+                </div>
+            </li>
+
+            <li class="row">
+                <div class="cell" data-title="№ п/п">
+                    13
+                </div>
+                <div class="cell" data-title="Фамилия и имя">
+                    <span title="Фамилия и имя"> Жека</span>
+                </div>
+                <div class="cell" data-title="Телефон">
+                    <a title="Phone" href="tel:+380  "> + 38 (0 )  </a>
+                </div>
+                <div class="cell" data-title="Е-mail">
+                    <a title="E-mail" href="mailto: @ "> @ </a>
+                </div>
+            </li>
+
+            <li class="row">
+                <div class="cell" data-title="№ п/п">
+                    14
+                </div>
+                <div class="cell" data-title="Фамилия и имя">
+                    <span title="Фамилия и имя"> Разумик Дмитрий</span>
+                </div>
+                <div class="cell" data-title="Телефон">
+                    <a title="Phone" href="tel:+380 "> + 38 (0 )  </a>
+                </div>
+                <div class="cell" data-title="Е-mail">
+                    <a title="E-mail" href="mailto: @ "> @ </a>
+                </div>
+            </li>
+
+            <li class="row">
+                <div class="cell" data-title="№ п/п">
+                    15
+                </div>
+                <div class="cell" data-title="Фамилия и имя">
+                    <span title="Фамилия и имя"> Евтушенко Илья</span>
+                </div>
+                <div class="cell" data-title="Телефон">
+                    <a title="Phone" href="tel:+380  "> + 38 (0 ) </a>
+                </div>
+                <div class="cell" data-title="Е-mail">
+                    <a title="E-mail" href="mailto: @ "> @ </a>
+                </div>
+            </li>
+
+            <li class="row">
+                <div class="cell" data-title="№ п/п">
+                    16
+                </div>
+                <div class="cell" data-title="Фамилия и имя">
+                    <span title="Фамилия и имя">Колюх Денис</span>
+                </div>
+                <div class="cell" data-title="Телефон">
+                    <a title="Phone" href="tel:+380 "> + 38 (0 ) </a>
+                </div>
+                <div class="cell" data-title="Е-mail">
+                    <a title="E-mail" href="mailto: @ "> @ </a>
+                </div>
+            </li>
+
+            <li class="row">
+                <div class="cell" data-title="№ п/п">
+                    17
+                </div>
+                <div class="cell" data-title="Фамилия и имя">
+                    <span title="Фамилия и имя">Стаценко Яша</span>
+                </div>
+                <div class="cell" data-title="Телефон">
+                    <a title="Phone" href="tel:+380 "> + 38 (0 ) </a>
+                </div>
+                <div class="cell" data-title="Е-mail">
+                    <a title="E-mail" href="mailto: @ "> @ </a>
+                </div>
+            </li>
+
+            <li class="row">
+                <div class="cell" data-title="№ п/п">
+                    18
+                </div>
+                <div class="cell" data-title="Фамилия и имя">
+                    <span title="Фамилия и имя"> Денежний Павел</span>
+                </div>
+                <div class="cell" data-title="Телефон">
+                    <a title="Phone" href="tel:+380 "> + 38 (0 ) </a>
+                </div>
+                <div class="cell" data-title="Е-mail">
+                    <a title="E-mail" href="mailto: @ "> @ </a>
+                </div>
+            </li>
+
+            <li class="row">
+                <div class="cell" data-title="№ п/п">
+                    19
+                </div>
+                <div class="cell" data-title="Фамилия и имя">
+                    <span title="Фамилия и имя"> Григоренко Артем</span>
+                </div>
+                <div class="cell" data-title="Телефон">
+                    <a title="Phone" href="tel:+380 "> + 38 (0 )  </a>
+                </div>
+                <div class="cell" data-title="Е-mail">
+                    <a title="E-mail" href="mailto: @ "> @ </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
