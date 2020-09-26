@@ -153,6 +153,9 @@
             }
 
         }
+        .footer {
+         color: white;   
+        }
     </style>
 
 </head>
@@ -467,7 +470,7 @@
             
         </ul>
     </div>
-    <div>
+    <div class="footer">
         <p><span class="realTimeAndYear"></span> Policai </p>
     </div>
     
@@ -476,8 +479,8 @@
         function printTime(){
             let d = new Date();
   
-            let yearTime = document.getElementsByClassName("realTimeAndYear")[0];
-            yearTime.innerHTML = d.toLocaleString() + ", ";
+           /* let yearTime = document.getElementsByClassName("realTimeAndYear")[0];
+            yearTime.innerHTML = d.toLocaleString() + ", ";*/
     
             let hours = d.getHours();
             let mins = d.getMinutes();
