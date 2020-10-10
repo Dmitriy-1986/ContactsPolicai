@@ -21,6 +21,10 @@
     <link rel="shortcut icon" href="https://mvs.gov.ua/upload/image/simvol_logo_mvs.png" type="image/png">
 
     <style>
+       html {
+           scroll-behavior: smooth;
+       }
+
         body {
             position: relative;
             width: 100%;
@@ -103,11 +107,20 @@
                 width: 720px;
             }
         }
+        @media screen and (min-width: 767.98px) {
+             .go-top {
+                 display: none;
+           }
+        }
 
         @media screen and (max-width: 767.98px) {
             .container {
                 width: 530px;
             }
+
+            .go-top {
+                 display: flex;
+           }
         }
 
         @media screen and (max-width: 575.98px) {
@@ -207,6 +220,7 @@
 
 <body>
     <div class="container">
+        <div id="top"></div>
         <div class="img-mvs">
             <img src="https://mvs.gov.ua/upload/image/simvol_logo_mvs.png" alt="mvs">
         </div>
@@ -538,6 +552,7 @@
             </li>
             <!-- Конец заголовка -->
         </ul>
+         <div class="go-top"><a href="#top">На верх<a></div>
         <hr>
         <div class="footer">
             <p><span class="realTimeAndYear"></span> Policai </p>
