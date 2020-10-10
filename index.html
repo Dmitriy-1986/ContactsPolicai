@@ -223,6 +223,30 @@
 
             color: white;
         }
+
+        .link {
+            text-decoration: none;
+            display: block;
+            margin: 0 auto;
+            width: 84px;
+            height: 42px;
+            cursor: pointer;
+            animation-name: animateArrow;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+         }
+
+         @keyframes animateArrow {
+           0% {
+             transform: translateY(0px);
+           }
+           50% {
+             transform: translateY(25px);
+           }
+           100% {
+              transform: translateY(0px);
+            }
+         }
     </style>
 
 </head>
@@ -561,7 +585,7 @@
             </li>
             <!-- Конец заголовка -->
         </ul>
-         <div class="go-top"><a href="#top">На верх<a></div>
+         <div class="go-top"><a class="link" href="#top">На верх<a></div>
         <hr>
         <div class="footer">
             <p><span class="realTimeAndYear"></span> Policai </p>
